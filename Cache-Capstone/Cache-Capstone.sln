@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cache-Capstone", "Cache-Capstone\Cache-Capstone.csproj", "{8A0960E4-F845-4428-AF66-D0D464F0ACF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A0960E4-F845-4428-AF66-D0D464F0ACF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A0960E4-F845-4428-AF66-D0D464F0ACF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A0960E4-F845-4428-AF66-D0D464F0ACF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A0960E4-F845-4428-AF66-D0D464F0ACF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CB56399-9964-4649-86C6-A4EFC11870F2}
+	EndGlobalSection
+EndGlobal

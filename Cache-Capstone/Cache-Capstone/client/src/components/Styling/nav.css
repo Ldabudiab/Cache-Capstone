@@ -1,0 +1,15 @@
+.navbar-styling {
+
+    display: flex;
+    background-color: #272727;
+}
+
+.nav-link{
+
+    color: goldenrod;
+}
+
+.navbar-brand{
+
+    color:goldenrod
+}
