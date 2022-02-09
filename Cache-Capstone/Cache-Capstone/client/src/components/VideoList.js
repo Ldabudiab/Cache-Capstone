@@ -52,7 +52,7 @@ const VideoList = () => {
                 onChange={HandleSearchInput}
             />
             <button className="serbut" onClick={handleClickSearch}>Search</button>
-            <button onClick={handleRefresh}>Refresh Filter</button>
+            <button className="serbut" onClick={handleRefresh}>Refresh Filter</button>
             <>{filteredSearch.map(s => {
                 return <Video key={s.id} video={s} />
             })}

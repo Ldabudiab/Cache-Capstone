@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import { useHistory } from "react-router-dom";
 import { register } from "../modules/authManager";
+import "./Styling/auth.css"
+import logolog from "../pics/logolog.png"
 
 export default function Register() {
     const history = useHistory();
@@ -12,7 +14,7 @@ export default function Register() {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [confirmPassword, setConfirmPassword] = useState();
-
+    
     const registerClick = (e) => {
         e.preventDefault();
         if (password && password !== confirmPassword) {
@@ -26,7 +28,10 @@ export default function Register() {
 
     return (
         <Form onSubmit={registerClick}>
-            <fieldset>
+
+
+            <fieldset className="reg-form">
+                <div className="loglogo"><img src={logolog} alt="cache-logo" className="app-login" /></div>
                 <FormGroup>
                     <Label htmlFor="firstName">First Name</Label>
                     <Input id="firstName" type="text" autoFocus onChange={e => setFirstName(e.target.value)} />
@@ -52,7 +57,14 @@ export default function Register() {
                     <Input id="confirmPassword" type="password" onChange={e => setConfirmPassword(e.target.value)} />
                 </FormGroup>
                 <FormGroup>
-                    <Button>Register</Button>
+                    <button className="btn-can">Register</button>
+                    <button
+                    className="btn-can"
+                    variant="secondary"
+                    onClick={() => history.push("/")}
+                    >
+                        Cancel
+                    </button>
                 </FormGroup>
             </fieldset>
         </Form>

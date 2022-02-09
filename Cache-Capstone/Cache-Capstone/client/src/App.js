@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import ApplicationViews from "./components/ApplicationViews";
 import Header from "./components/Header";
 import { onLoginStatusChange } from "./modules/authManager";
+import {  Redirect } from "react-router-dom";
 
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(null);
@@ -14,7 +15,7 @@ function App() {
     return (
         <div className="App">
             <Router>
-                <Header isLoggedIn={isLoggedIn} />
+            {isLoggedIn ? <Header /> : <Redirect to="/login" />}
                 <ApplicationViews isLoggedIn={isLoggedIn} />
             </Router>
         </div>

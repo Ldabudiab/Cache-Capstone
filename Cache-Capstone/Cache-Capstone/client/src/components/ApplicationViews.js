@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import SearchBar from "./Search";
+
 import Login from "./Login";
 import Register from "./Register";
 import VideoList from "./VideoList";
@@ -21,7 +21,7 @@ const ApplicationViews = ({ isLoggedIn }) => {
         <Switch>
 
             <Route path="/" exact>
-                {/* {isLoggedIn ? <SearchBar /> : <Redirect to="/login" />} */}
+               
                 {isLoggedIn ? <VideoList /> : <Redirect to="/login" />}
             </Route>
             <Route path="/taglist">
