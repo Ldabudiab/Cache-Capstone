@@ -17,3 +17,12 @@
     
 }
 
+.logout{
+    border: solid goldenrod;
+    border-width: 1px;
+    color: goldenrod;
+    border-radius: 10px;
+    background: none;
+    font-size: 14px;
+    width: 100px;
+}

@@ -44,7 +44,7 @@ const TagForm = () => {
         <Container>
             <div className="tagForm">
                 <h3> Tag</h3>
-                <div className="container-5">
+                <div className="createtagform">
                     <div className="form-group">
                         <label for="name">Name</label>
                         <input type="name" class="form-control" id="name" placeholder="name" value={tag.name} onChange={handleInput} required />
@@ -61,7 +61,7 @@ const TagForm = () => {
 
                         </div>
                         :
-                        <button type="submit" onClick={event => {
+                        <button className="creattagbtn" type="submit" onClick={event => {
                             handleCreateTag()
                         }}>Create</button>
                     }

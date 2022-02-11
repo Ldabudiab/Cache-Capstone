@@ -1,0 +1,20 @@
+.video-form{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /* width: 500px; */
+    align-items: center;
+    margin-top: 50px;
+}
+
+#title{
+    width: 400px;
+}
+
+#vidurl{
+    width: 400px;
+}
+
+#description{
+    width: 400px;
+}

@@ -23,22 +23,18 @@ export const TagList = () => {
     }
     console.log(tags)
     return (
-        <div className="container">
-            <div className="justify-content-center">
-                <center><h1>Tags</h1></center>
-                <Row xs="3">
-                    <Col>
-                    </Col>
-                    <Col className="mt-3">
-                    </Col>
-                </Row>
-                <p>
+        <div className="taglist">
+                <div className="tagtitle">
+                    <h1>Tags</h1>
+                </div> 
+                <div className="taglisttags">
                     {tags.map((tag) => (
                         <Tag tag={tag} key={tag.Id} setTags={setTags} />
                     ))}
-                    <button onClick={handleClickTagForm}>Create a Tag </button>
-                </p>
-            </div>
+                </div>
+                <div className="createtbtn">
+                <button className="createtag" onClick={handleClickTagForm}>Create a Tag </button>
+                </div>
         </div>
     );
 }

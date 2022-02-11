@@ -21,10 +21,10 @@ const DeleteVideo = () => {
     return (
         <Card>
             <CardBody>
-                <p>Are you sure you want to delete this video? </p>
+                <p className="aredelete">Are you sure you want to delete this video? </p>
                 <br></br>
-                <Button onClick={handleCancel}>Cancel</Button>
-                <Button onClick={handleDelete}>Delete</Button>
+                <Button className="delbtnscan" onClick={handleCancel}>Cancel</Button>
+                <Button className="delbtns" onClick={handleDelete}>Delete</Button>
             </CardBody>
         </Card >
     );

@@ -2,7 +2,7 @@ import React, { useState, } from 'react';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import { addVideo } from "../modules/videoManager";
-
+import "./Styling/forms.css"
 
 const VideoForm = ({ getVideos }) => {
     const emptyVideo = {
@@ -57,7 +57,7 @@ const VideoForm = ({ getVideos }) => {
     };
 
     return (
-        <Form>
+        <Form className='video-form'>
             <FormGroup>
                 <Label for="title">Title</Label>
                 <Input type="text" name="title" id="title" placeholder="video title"
@@ -66,7 +66,7 @@ const VideoForm = ({ getVideos }) => {
             </FormGroup>
             <FormGroup>
                 <label className="labels" htmlFor="img">Video: </label>
-                <input type="file" name="file" onChange={(event)=> {uploadVideo(event);}} required autoFocus className="form-control" />
+                <input type="file" name="file" id='vidurl' onChange={(event)=> {uploadVideo(event);}} required autoFocus className="form-control" />
             </FormGroup>
             <FormGroup>
                 <Label for="description">Description</Label>

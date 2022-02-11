@@ -28,7 +28,7 @@ const Header = () => {
         </li>
         
       </ul>
-      <button onClick={logout}>Logout</button>
+      <button className="logout" onClick={logout}>Logout</button>
     </nav>
   );
 };

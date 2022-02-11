@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { Button } from "reactstrap";
-
+import "../Styling/tags.css"
 const Tag = ({ tag }) => {
     const history = useHistory();
 
@@ -13,17 +13,17 @@ const Tag = ({ tag }) => {
     };
 
     return (
-        <tr>
-            <th scope="row">{tag.name}</th>
-            <td>
-                <Button className="mr-2" color="primary" onClick={handleEdit}>
+        <div className="Tagcard">
+            <p className="tagname" scope="row">{tag.name}</p>
+            <div>
+                <Button className="edittagcard"  onClick={handleEdit}>
                     edit
                 </Button>
-                <Button color="danger" onClick={handleDelete}>
+                <Button className="edittagcard"  onClick={handleDelete}>
                     delete
                 </Button>
-            </td>
-        </tr>
+            </div>
+        </div>
     );
 };
 

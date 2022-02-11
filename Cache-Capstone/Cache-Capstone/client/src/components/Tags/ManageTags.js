@@ -59,33 +59,40 @@ const ManageTags = () => {
     };
 
     return (
-        <div className="container">
-            <h1>Tags</h1>
-            <div className="mt-2">
-                <div>
-                    <div>
-                        <p>Tag Name</p>
+        <div >
+            <div className="tagtitle">
+                <h1>Tags</h1>
+            </div> 
+            <div className="managetagslist">
+                
+                    
                         
-                    </div>
-                </div>
-                <div>
+                        
+                   
+                
+               
                     {tags.map((videoTag) => (
                         <VideoTag
+                        
                             videoTag={videoTag}
                             key={videoTag.id}
                             handleTagSelected={handleTagSelected}
                             activeTagIds={activeTagIds}
                         />
                     ))}
-                </div>
+                
+            
+           
             </div>
+            <div className="videotagssave">
             <Button
                 color="secondary"
-                className="ManageTags__save"
+                className="tagssave"
                 onClick={handleSave}
             >
                 Save
             </Button>
+            </div>
         </div>
     );
 };

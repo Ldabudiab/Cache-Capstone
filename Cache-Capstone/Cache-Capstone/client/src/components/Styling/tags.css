@@ -1,0 +1,183 @@
+.taglist{
+
+    
+    color: goldenrod;
+    
+}
+
+.Tagcard{
+    color: white;
+    border: solid white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edittagcard{
+    margin: 12px;
+    width: 100px;
+}
+
+.tagname{
+    font-size: 25px;
+}
+
+.createtag{
+    border: solid white;
+    border-width: 1px;
+    color: white;
+    border-radius: 10px;
+    background: none;
+    font-size: 20px;
+    width: 200px;
+}
+
+.taglisttags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    width: 1200px;
+    margin-left: 363px;
+}
+
+.tagtitle{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: white;
+}
+
+.createtbtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.videoTag{
+    color: white;
+    border: solid white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.managetagslist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    width: 1200px;
+    margin-left: 363px;
+}
+
+.videotagssave{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.tagssave{
+    font-size: 20px;
+}
+
+.vtname{
+    font-size: 25px ;
+}
+
+#name{
+    width: 400px;
+}
+
+.addtagform{
+    display: flex;
+    justify-content: center;
+}
+
+.edittagform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.editbuttons{
+    margin-top: 10px;
+}
+
+.edisub{
+    border: solid white;
+    border-width: 1px;
+    color: white;
+    border-radius: 10px;
+    background: none;
+    font-size: 15px;
+    width: 70px;
+    margin: 10px;
+}
+
+.edican{
+    border: solid white;
+    border-width: 1px;
+    color: white;
+    border-radius: 10px;
+    background: none;
+    font-size: 15px;
+    width: 70px;
+    margin: 10px;
+}
+
+.deletetagform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.deltagbuttons{
+    display: flex;
+}
+
+.areusuredel{
+    font-size: 20px;
+}
+
+.tagForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.creattagbtn{
+
+    border: solid white;
+    border-width: 1px;
+    color: white;
+    border-radius: 10px;
+    background: none;
+    font-size: 15px;
+    width: 70px;
+    margin-top: 15px;
+}
+
+.createtagform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
+}

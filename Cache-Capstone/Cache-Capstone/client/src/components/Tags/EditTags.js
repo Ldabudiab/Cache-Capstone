@@ -34,11 +34,11 @@ const EditTag = () => {
     };
     console.log(tag.name)
     return (
-        <form className="main-content">
-            <h2 className="_title">Edit Tag:</h2>
+        <form className="edittagform">
+            <h2 className="_title">Edit Tag</h2>
             <fieldset className="fieldset">
                 <div className="form-group">
-                    <label htmlFor="name">Tag name:</label>
+                    <label htmlFor="name">New Tag Name</label>
                     <input
                         type="text"
                         id="name"
@@ -50,20 +50,23 @@ const EditTag = () => {
                     />
                 </div>
             </fieldset>
+            <div className="editbuttons">
             <button
-                className="btn-add-delete"
+                className="edisub"
                 variant="primary"
                 onClick={handleConfirm}
             >
                 Submit
             </button>
             <button
-                className="btn-add-edit"
+                className="edican"
                 variant="secondary"
                 onClick={() => history.push("/taglist")}
             >
                 Cancel
             </button>
+            </div>
+            
         </form>
     );
 };

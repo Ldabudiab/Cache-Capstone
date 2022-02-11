@@ -25,23 +25,26 @@ const DeleteTag = () => {
     };
 
     return (
-        <form className="main-content">
-            <h2 className="_title">Delete Tag:</h2>
-            <p>Are you sure you want to delete {tag.name}?</p>
+        <form className="deletetagform">
+            <h2 className="_title">Delete Tag</h2>
+            <p className="areusuredel">Are you sure you want to delete {tag.name}?</p>
+            <div className="deltagbuttons">
             <button
-                className="btn-add-delete"
+                className="edisub"
                 variant="danger"
                 onClick={handleConfirm}
             >
                 Delete
             </button>
             <button
-                className="btn-add-edit"
+                className="edican"
                 variant="secondary"
                 onClick={() => history.push("/taglist")}
             >
                 Cancel
             </button>
+            </div>
+          
         </form>
     );
 };
